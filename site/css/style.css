@@ -1,1 +1,102 @@
 /* RSF styles */
+
+*, body {
+    margin: 0;
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Navbar style */
+
+nav {
+    padding: 24px 0px 24px 0px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    text-align: center;
+}
+
+nav ul li a {
+    color: #222823;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.link {
+    margin-top: 28px;
+    margin-right: 16px;
+}
+
+.logo a {
+    margin-right: 32px;
+    font-size: 64px;
+}
+
+/* Section Article style */
+
+section {
+    margin: 12px;
+}
+
+article {
+    margin-top: 9px;
+    padding: 12px;
+    border: solid #f4f6f6 1px;
+    border-radius: 5px;
+}
+
+article h2 {
+    font-size: 28px;
+    margin-bottom: 12px;;
+}
+
+article p {
+    font-size: 22px;
+    margin-bottom: 12px;
+    text-align: justify;
+}
+
+article a {
+    color: #575a5e;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.read {
+    text-align: right;
+    padding: 10px;
+}
+
+/* Footer */
+
+footer {
+    padding: 64px 0px 196px 0px;
+    text-align: center;
+    background-color: #222823;
+}
+
+footer p {
+    color: #f4f6f6; 
+    font-size: 16px;
+    font-weight: 700;
+}
+
+footer p a {
+    color: #575a5e; 
+    text-decoration: none;
+}
+
+/* Article */
+
+/* 404 */
+.fourzerofour article h1 {
+    font-size: 32px;
+}
