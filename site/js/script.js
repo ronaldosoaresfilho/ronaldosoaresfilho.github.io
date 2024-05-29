@@ -26,6 +26,7 @@ function showHead()
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=PT+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     `;
 
     var filename = getFilename();
@@ -106,7 +107,8 @@ function showFooter()
     `
     <footer>
         <p>Desenvolvido por <a href="https://rontekhne.github.io">RonTekhne</a> &copy; 2024</p>
-        <p>Distribuído por GitHub</p>
+        <p>Distribuído por <i class="fa fa-github" aria-hidden="true"></i>
+        </p>
     </footer>
     `;
 
