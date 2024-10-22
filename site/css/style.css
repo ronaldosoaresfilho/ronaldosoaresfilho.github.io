@@ -61,6 +61,9 @@ article p {
     font-size: 22px;
     margin-bottom: 12px;
     text-align: justify;
+    letter-spacing: 0.5px;
+    word-spacing: 2px;
+    hyphens: auto;
 }
 
 article a {
