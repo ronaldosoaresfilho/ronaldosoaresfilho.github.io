@@ -36,7 +36,7 @@ function showHead()
     }else if (filename === "about.html" || filename === "articles.html") {
         head += `<link rel="stylesheet" href="../css/style.css">`;
     }else {
-        head += `<link rel="stylesheet" href="../site/css/style.css">`;
+        head += `<link rel="stylesheet" href="../../site/css/style.css">`;
     }
     
     document.write(head);
@@ -68,9 +68,9 @@ function showNav()
     }else {
         nav += 
         `
-        <li class="logo"><a href="../index.html">RSF</a></li>
-        <li class="link"><a href="../site/src/articles.html">ARTIGOS</a></li>
-        <li class="link"><a href="../site/src/about.html">SOBRE</a></li>
+        <li class="logo"><a href="../../index.html">RSF</a></li>
+        <li class="link"><a href="../../site/src/articles.html">ARTIGOS</a></li>
+        <li class="link"><a href="../../site/src/about.html">SOBRE</a></li>
         `;
     }
             
@@ -87,16 +87,25 @@ function showIndexArticles()
     `
     <article>
             <h2>
-                LOREM IPSUM
+                TPA - TUPI ANTIGO
             </h2>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                Neste artigo eu detalho o processo de desenvolvimento do TPA, o software de estudos do Tupi Antigo. O Tupi Antigo foi a língua indígena mais falada na costa do Brasil até o século XVI. O TPA possui um dicionário, um tradutor e um modelo generativo. A base de dados é retirada das obras do professor Eduardo de Almeida Navarro, associado da Faculdade de Filosofia, Letras e Ciências Humanas da USP, mestre experiente no ensino e na pesquisa do Tupi Antigo. As principais obras do professor Navarro são o Dicionário e o Método. Leia o artigo e saiba mais sobre o processo de desenvolvimento do TPA.
             </p>
-            <div class="read">
-                <a href="#">LER</a>
+            <div class="read">`;
+
+    var filename = getFilename();
+    if (filename == "index.html") {
+    articles +=   `<a href="post/2024/post_28_10_2024_tupi_antigo.html">LER</a>
             </div>            
         </article>
     `;
+    }else {
+        articles +=   `<a href="../../post/2024/post_28_10_2024_tupi_antigo.html">LER</a>
+            </div>            
+        </article>
+    `;  
+    }
 
     document.write(articles);
 }
